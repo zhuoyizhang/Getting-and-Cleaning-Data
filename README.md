@@ -7,7 +7,14 @@ date: "Sunday, March 22, 2015"
 output: html_document
 ---
 
+Requirement
+
+dplyr package should be installed in Rstudio
+
+
+
 How to run run_analysis.R
+
 1. download raw data from the following link
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 2. unzip it to any local folder
@@ -26,7 +33,7 @@ If your type dir() in Rstudio, you should see run_analysis.R are located in UCI 
 5. Open run_analysis.R in Rstudio and compile it
 6. Run run_analysis.R in the console by typing 
      run_analysis()   
-6. The tidydata file will be generated in "UCI HAR Dataset"
+7. The tidydata file will be generated in "UCI HAR Dataset"
         you will see a message in console like the following.
         [1] "tidydata.txt is successfully generated in  <your path>/UCI HAR Dataset"
 
