@@ -38,5 +38,59 @@ If your type dir() in Rstudio, you should see run_analysis.R are located in UCI 
         [1] "tidydata.txt is successfully generated in  <your path>/UCI HAR Dataset"
 
 
+What does run_analysis.R does
+
+step 1  --line 24-44
+Merges the training and the test sets to create one data set
+I merge the following 3 files in folder "Train"
+##'train/X_train.txt': Training set.
+##'train/y_train.txt': Train Activity code
+##'train/subject_train.txt': Each row identifies the subject who performed the activity
+##'for each window sample. 
+
+I merge the following 3 files in folder "test"
+
+##'test/X_test.txt': Test set.
+##'test/y_test.txt': Test activity code.
+##'test/subject_test.txt': Each row identifies the subject who performed the activity
+##'for each window sample. 
+
+step 2 --line 48
+merge the train set and test set into one data frame
+
+
+step 3  --line 52-54
+load the activity id and activity discription table from activity_labels.txt
+
+
+step 4  --line 58-60
+Extracts only the measurements on the mean and standard deviation for each measurement. 
+I search all the column names that contain "mean" or "std"
+
+
+step 5   --line 61
+merge activity name to the one data frame with matching activity id
+
+
+step 6   --line 71
+Summarise all the measurements group by activity id, activity name and subject.
+Activity id and activity name are 1 to 1 mapping, so it is correct to include both columns into group by function
+
+step 7   --line 74-75
+Write the result data frame into tidydata.txt and print the successful message
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
