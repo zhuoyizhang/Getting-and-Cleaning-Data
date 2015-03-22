@@ -1,3 +1,4 @@
+##Author Zhuoyi Zhang
 ##1.    Merges the training and the test sets to create one data set
 ##'train/X_train.txt': Training set.
 ##'train/y_train.txt': Training labels.
